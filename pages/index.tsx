@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       tech: ['Backend API', 'PostgreSQL', 'Sequelize ORM', 'JWT', 'OAuth 2.0'],
       score: 'Mar 2026',
       icon: '🎮',
-      github: 'https://github.com/yassinefilali/ft_transcendence',
+      github: 'https://github.com/FilaliYassine/ft_transcendence',
       highlights: ['Real-time chat system', 'Secure authentication flows', 'Friend & profile system', 'Agile team collaboration']
     },
     {
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
       tech: ['C++', 'Linux epoll API', 'CGI', 'HTTP/1.1', 'Nginx-style config'],
       score: 'Nov 2025',
       icon: '🌐',
-      github: 'https://github.com/yassinefilali/webserv',
+      github: 'https://github.com/FilaliYassine/webserv',
       highlights: ['Non-blocking I/O', 'CGI support', 'RFC-compliant HTTP', 'Configuration parser']
     },
     {
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
       tech: ['Docker', 'Docker Compose', 'Nginx', 'WordPress', 'MariaDB'],
       score: 'Nov 2025',
       icon: '🐳',
-      github: 'https://github.com/yassinefilali/inception',
+      github: 'https://github.com/FilaliYassine/inception',
       highlights: ['Multi-container architecture', 'Automated deployment', 'Isolated networks', 'Production-ready environment']
     },
     {
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
       tech: ['C', 'Algorithm Design', 'Data Structures', 'Memory Management'],
       score: 'Jul 2024',
       icon: '📊',
-      github: 'https://github.com/yassinefilali/push_swap',
+      github: 'https://github.com/FilaliYassine/push_swap',
       highlights: ['Custom sorting algorithm', 'Two-stack implementation', 'Minimum operations', 'Memory optimization']
     }
   ]
@@ -535,8 +535,8 @@ const Home: NextPage = () => {
               <div className="space-y-4">
                 {[
                   { icon: <FaEnvelope />, text: 'filali.yassine01@gmail.com', href: 'mailto:filali.yassine01@gmail.com' },
-                  { icon: <FaGithub />, text: 'GitHub Profile', href: 'https://github.com/yassinefilali' },
-                  { icon: <FaLinkedin />, text: 'LinkedIn Profile', href: 'https://linkedin.com/in/yassine-filali' },
+                  { icon: <FaGithub />, text: 'GitHub Profile', href: 'https://github.com/FilaliYassine' },
+                  { icon: <FaLinkedin />, text: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/yassine-filali-3a048b304/' },
                   { icon: <FaWhatsapp />, text: '+212 611516156', href: 'https://wa.me/212611516156' }
                 ].map((item) => (
                   <a
