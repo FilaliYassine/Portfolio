@@ -102,6 +102,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Yassine Filali - Backend Developer | 42 School</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Backend Developer and 42 School graduate specializing in system programming, API development, and cloud architecture." />
         <meta name="keywords" content="backend developer, 42 school, software engineer, system programming, API development" />
       </Head>
@@ -185,7 +186,7 @@ const Home: NextPage = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900" />
         </div>
 
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Side - Text Content */}
             <div className="text-center md:text-left">
@@ -194,10 +195,10 @@ const Home: NextPage = () => {
                   <span className="inline-block px-4 py-2 bg-yellow-400 text-slate-900 rounded-full text-sm font-medium mb-6">
                     Hi! I'm Yassine Filali
                   </span>
-                  <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 leading-tight whitespace-nowrap">
+                  <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-slate-100 mb-4 leading-tight">
                     Software Engineer
                   </h1>
-                  <p className="text-lg md:text-xl text-slate-400 mb-8 max-w-lg">
+                  <p className="text-base sm:text-lg md:text-xl text-slate-400 mb-8 max-w-lg">
                     Dedicated student at 1337 School with expertise in system programming, 
                     web development, and infrastructure. Building scalable solutions from scratch.
                   </p>
@@ -222,15 +223,15 @@ const Home: NextPage = () => {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-8 max-w-md mx-auto md:mx-0">
+                <div className="grid grid-cols-3 gap-4 sm:gap-8 max-w-md mx-auto md:mx-0">
                   {[
                     { number: '11.29', label: '1337 Level' },
                     { number: '25+', label: 'Projects' },
                     { number: '15+', label: 'Technologies' }
                   ].map((stat) => (
                     <div key={stat.label} className="text-center md:text-left">
-                      <div className="text-3xl font-bold gradient-text">{stat.number}</div>
-                      <div className="text-sm text-slate-400">{stat.label}</div>
+                      <div className="text-2xl sm:text-3xl font-bold gradient-text">{stat.number}</div>
+                      <div className="text-xs sm:text-sm text-slate-400">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -238,27 +239,27 @@ const Home: NextPage = () => {
             </div>
 
             {/* Right Side - Profile Image with Background Text */}
-            <div className="relative flex justify-end w-full">
+            <div className="relative flex justify-center md:justify-end w-full mt-8 md:mt-0">
               {/* Container without frame */}
-              <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-visible">
+              <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden md:overflow-visible">
                 {/* Large Background Text - SOFTWARE ENGINEER */}
-                <div className="absolute inset-0 flex items-center justify-end pr-8">
-                  <div className="text-right">
-                    <span className="block text-6xl md:text-7xl lg:text-8xl font-black text-slate-800/10 uppercase tracking-tight leading-none">
+                <div className="absolute inset-0 flex items-center justify-center md:justify-end pr-0 md:pr-8">
+                  <div className="text-center md:text-right">
+                    <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-800/10 uppercase tracking-tight leading-none">
                       SOFTWARE
                     </span>
-                    <span className="block text-6xl md:text-7xl lg:text-8xl font-black text-slate-800/10 uppercase tracking-tight leading-none mt-2">
+                    <span className="block text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-slate-800/10 uppercase tracking-tight leading-none mt-2">
                       ENGINEER
                     </span>
                   </div>
                 </div>
                 
                 {/* Profile Image - Positioned to right, no frame */}
-                <div className="absolute bottom-0 right-0 h-full flex items-end justify-end">
+                <div className="absolute bottom-0 right-0 left-0 md:left-auto h-full flex items-end justify-center md:justify-end">
                   <img 
                     src="/profile-hero.webp" 
                     alt="Yassine Filali" 
-                    className="w-auto h-[75%] md:h-[80%] lg:h-[85%] object-contain relative z-10 rounded-3xl"
+                    className="w-auto h-[70%] sm:h-[75%] md:h-[80%] lg:h-[85%] object-contain relative z-10 rounded-3xl"
                     style={{ 
                       filter: 'drop-shadow(0 20px 40px rgba(99, 102, 241, 0.2))',
                     }}
@@ -275,7 +276,7 @@ const Home: NextPage = () => {
 
       {/* About Section */}
       <section id="about" className="section-padding">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-4 gradient-text">About Me</h2>
           <p className="text-center text-slate-400 mb-12">Backend Developer with a Passion for Clean Code</p>
 
@@ -338,11 +339,11 @@ const Home: NextPage = () => {
 
       {/* Projects Section */}
       <section id="projects" className="section-padding bg-slate-800/30">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-4 gradient-text">42 School Projects</h2>
           <p className="text-center text-slate-400 mb-12">Rigorous Programming Challenges & System Development</p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {projects.map((project, index) => (
               <div
                 key={project.title}
@@ -394,11 +395,11 @@ const Home: NextPage = () => {
 
       {/* Skills Section */}
       <section id="skills" className="section-padding">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-4 gradient-text">Technical Skills</h2>
           <p className="text-center text-slate-400 mb-12">Technologies & Tools I Work With</p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {Object.entries(skills).map(([category, items]) => (
               <div
                 key={category}
@@ -432,7 +433,7 @@ const Home: NextPage = () => {
 
       {/* Experience Section */}
       <section id="experience" className="section-padding bg-slate-800/30">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-4 gradient-text">Experience & Education</h2>
           <p className="text-center text-slate-400 mb-12">My Professional Journey</p>
 
@@ -493,7 +494,7 @@ const Home: NextPage = () => {
 
       {/* Contact Section */}
       <section id="contact" className="section-padding">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-4 gradient-text">Get In Touch</h2>
           <p className="text-center text-slate-400 mb-12">Let's Build Something Amazing Together</p>
 
