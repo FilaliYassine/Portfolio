@@ -537,25 +537,52 @@ const Home: NextPage = () => {
 
             <div className="space-y-6">
               <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-              <div className="space-y-4">
-                {[
-                  { icon: <FaEnvelope />, text: 'filali.yassine01@gmail.com', href: 'mailto:filali.yassine01@gmail.com' },
-                  { icon: <FaGithub />, text: 'GitHub Profile', href: 'https://github.com/FilaliYassine' },
-                  { icon: <FaLinkedin />, text: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/yassine-filali-3a048b304/' },
-                  { icon: <FaWhatsapp />, text: '+212 611516156', href: 'https://wa.me/212611516156' }
-                ].map((item) => (
+              {[
+                {
+                  icon: <FaEnvelope />,
+                  title: 'Email',
+                  text: 'filali.yassine01@gmail.com',
+                  href: 'mailto:filali.yassine01@gmail.com',
+                  description: 'Drop me an email anytime'
+                },
+                {
+                  icon: <FaGithub />,
+                  title: 'GitHub',
+                  text: 'GitHub Profile',
+                  href: 'https://github.com/FilaliYassine',
+                  description: 'Check out my code repositories'
+                },
+                {
+                  icon: <FaLinkedin />,
+                  title: 'LinkedIn',
+                  text: 'LinkedIn Profile',
+                  href: 'https://www.linkedin.com/in/yassine-filali-3a048b304/',
+                  description: 'Connect with me professionally'
+                },
+                {
+                  icon: <FaWhatsapp />,
+                  title: 'WhatsApp',
+                  text: '+212 611516156',
+                  href: 'https://wa.me/212611516156',
+                  description: 'Quick chat for urgent matters'
+                }
+              ].map((item) => (
+                <div key={item.text} className="p-4 rounded-lg glass-effect hover:border-indigo-500/50 border border-slate-700/50 transition-all">
                   <a
-                    key={item.text}
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 p-4 rounded-lg glass-effect hover:bg-indigo-500/10 transition-all group"
+                    className="flex items-start gap-4 group"
                   >
-                    <span className="text-indigo-400 group-hover:scale-110 transition-transform">{item.icon}</span>
-                    <span className="text-slate-300">{item.text}</span>
+                    <span className="text-2xl text-indigo-400 group-hover:scale-110 transition-transform">{item.icon}</span>
+                    <div>
+                      <h4 className="font-semibold text-slate-100 mb-1">{item.title}</h4>
+                      <p className="text-sm text-slate-400 mb-1">{item.description}</p>
+                      <p className="text-sm text-indigo-400 group-hover:text-indigo-300">{item.text}</p>
+                    </div>
                   </a>
-                ))}
-              </div>
+                </div>
+              ))}
 
               <div className="mt-8 p-4 rounded-lg bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20">
                 <p className="text-sm text-slate-300 text-center">
