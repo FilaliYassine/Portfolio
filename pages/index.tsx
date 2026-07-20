@@ -503,6 +503,11 @@ const Home: NextPage = () => {
               <h3 className="text-xl font-semibold mb-4">Available For</h3>
               {[
                 {
+                  icon: '🎓',
+                  title: 'Open to Internships',
+                  description: 'Seeking internship opportunities to gain hands-on experience'
+                },
+                {
                   icon: '💼',
                   title: 'Full-Time Positions',
                   description: 'Backend Developer roles in innovative companies'
