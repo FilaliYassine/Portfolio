@@ -527,8 +527,8 @@ const Home: NextPage = () => {
                   <div className="flex items-start gap-4">
                     <span className="text-2xl">{item.icon}</span>
                     <div>
-                      <h4 className="font-semibold mb-1">{item.title}</h4>
-                      <p className="text-sm text-slate-400">{item.description}</p>
+                      <h4 className="font-semibold text-slate-100 mb-1">{item.title}</h4>
+                      <p className="text-sm text-slate-400 mb-1">{item.description}</p>
                     </div>
                   </div>
                 </div>
